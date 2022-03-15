@@ -240,6 +240,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Terneros\Terneros.aspx" />
+    <Content Include="Toros\Toros.aspx" />
     <Content Include="Vacas\Vacas.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -413,6 +414,13 @@
       <DependentUpon>Terneros.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Toros\Toros.aspx.designer.vb">
+      <DependentUpon>Toros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toros\Toros.aspx.vb">
+      <DependentUpon>Toros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Vacas\Vacas.aspx.designer.vb">
       <DependentUpon>Vacas.aspx</DependentUpon>
     </Compile>
@@ -461,6 +469,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Terneros\Web.config" />
     <Content Include="Vacas\Web.config" />
+    <Content Include="Toros\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
