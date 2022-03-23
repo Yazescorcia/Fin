@@ -1,47 +1,50 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Vacas.aspx.vb" Inherits="ControlVacuno1.Vacas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Página De Vacas</h1>
+    <h1>Página De Vacas<img src="../Resources/vaca.jpg" style="width: 155px; height: 145px" /></h1>
     <div class="row">
         <div class="col-md-4">
-            <asp:Label ID="lblArete" runat="server" Text="Arete:"></asp:Label>
-            <asp:TextBox ID="txtArete" runat="server"></asp:TextBox>
+            <asp:Label ID="lblArete" runat="server" Text="Arete:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtArete" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
         <div class="col-md-4">
-            <asp:Label ID="lblNombre" runat="server" Text="Nombre:"></asp:Label>
-            <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+            <asp:Label ID="lblNombre" runat="server" Text="Nombre:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtNombre" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
         <div class="col-md-4">
-            <asp:Label ID="lbtFecha" runat="server" Text="Fecha:"></asp:Label>
-            <asp:TextBox ID="txtFecha" runat="server"></asp:TextBox>
+            <asp:Label ID="lbtFecha" runat="server" Text="Fecha:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtFecha" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
+            <br />
             <br />
             <br />
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <asp:Label ID="lblProceso" runat="server" Text="Proceso:"></asp:Label>
-            <asp:TextBox ID="txtProceso" runat="server"></asp:TextBox>
+            <asp:Label ID="lblProceso" runat="server" Text="Proceso:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtProceso" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
         <div class="col-md-6">
-            <asp:Label ID="Label1" runat="server" Text="Cemental:"></asp:Label>
-            <asp:TextBox ID="txtCemental" runat="server"></asp:TextBox>
+            <asp:Label ID="Label1" runat="server" Text="Cemental:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtCemental" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
     </div>
     <div class="row">
-
+        
         <br />
+        <br /> 
         <br />
 
     </div>
     <div class="row">
         <div class="col-md-4">
-            <asp:Button ID="btnInsertar" runat="server" Text="Insertar"  />
+            <asp:Button ID="btnInsertar" runat="server" Text="Insertar" BackColor="#CC9900" BorderColor="Black" BorderWidth="5px"  />
         </div>
         <div class="col-md-4">
-            <asp:Button ID="btnModificar" runat="server" Text="Modificar" />
+            <asp:Button ID="btnModificar" runat="server" Text="Modificar" BackColor="#CC9900" BorderColor="Black" BorderWidth="5px" />
         </div>
         <div class="col-md-4">
-            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
+            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" BackColor="#CC9900" BorderColor="Black" BorderWidth="5px" />
+            <br />
             <br />
             <br />
         </div>
@@ -77,6 +80,10 @@
                 <SortedDescendingHeaderStyle BackColor="#575357"></SortedDescendingHeaderStyle>
             </asp:GridView>
             <asp:SqlDataSource runat="server" ID="SqlDataSourceVacas" ConnectionString='<%$ ConnectionStrings:DefaultConnection %>' SelectCommand="SELECT arete, nombre, fecha, proceso, cemental FROM Vacas"></asp:SqlDataSource>
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </div>
 </asp:Content>

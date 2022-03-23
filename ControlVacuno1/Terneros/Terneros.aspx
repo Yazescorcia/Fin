@@ -1,52 +1,57 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Terneros.aspx.vb" Inherits="ControlVacuno1.Terneros" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
- <h1>Página De Terneros</h1>
+    <h1>Página De Terneros<img src="../Resources/becerro.jpg" style="width: 204px; height: 166px" /></h1>
+    
     <div class="row">
         <div class="col-md-4">
-            <asp:Label ID="lblArete" runat="server" Text="Arete:"></asp:Label>
-            <asp:TextBox ID="txtArete" runat="server"></asp:TextBox>
+            <asp:Label ID="lblArete" runat="server" Text="Arete:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtArete" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
         <div class="col-md-4">
-            <asp:Label ID="lblNombre" runat="server" Text="Nombre:"></asp:Label>
-            <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+            <asp:Label ID="lblNombre" runat="server" Text="Nombre:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtNombre" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
         <div class="col-md-4">
-            <asp:Label ID="lbtFecha" runat="server" Text="Fecha:"></asp:Label>
-            <asp:TextBox ID="txtFecha" runat="server"></asp:TextBox>
+            <asp:Label ID="lbtFecha" runat="server" Text="Fecha:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtFecha" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
+            <br />
             <br />
             <br />
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <asp:Label ID="lblPadre" runat="server" Text="Padre:"></asp:Label>
-            <asp:TextBox ID="txtPadre" runat="server"></asp:TextBox>
+            <asp:Label ID="lblPadre" runat="server" Text="Padre:" Font-Size="Medium"></asp:Label>
+            <asp:TextBox ID="txtPadre" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
         <div class="col-md-6">
-            <asp:Label ID="lblMadre" runat="server" Text="Madre:"></asp:Label>
-        <asp:TextBox ID="txtMadre" runat="server"></asp:TextBox>
+            <asp:Label ID="lblMadre" runat="server" Text="Madre:" Font-Size="Medium"></asp:Label>
+        <asp:TextBox ID="txtMadre" runat="server" BackColor="#FFFFCC" BorderColor="Black" BorderWidth="5px"></asp:TextBox>
         </div>
     </div>
+
     <div class="row">
         <br />
         <br />
+        <br />
     </div>
     <div class="row">
         <div class="col-md-4">
-            <asp:Button ID="btnInsertar" runat="server" Text="Insertar" />
+            <asp:Button ID="btnInsertar" runat="server" Text="Insertar" BackColor="#CC9900" BorderColor="#663300" BorderWidth="5px" />
         </div>
         <div class="col-md-4">
-            <asp:Button ID="btnModificar" runat="server" Text="Modificar" />
+            <asp:Button ID="btnModificar" runat="server" Text="Modificar" BackColor="#CC9900" BorderColor="#663300" BorderWidth="5px" />
         </div>
         <div class="col-md-4">
-            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
+            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" BackColor="#CC9900" BorderColor="#663300" BorderWidth="5px" />
+            <br />
             <br />
             <br />
         </div>
      </div>
     <div class="row">
         <div class="col-md-12">
-            <asp:GridView ID="gvTerneros" runat="server" AutoGenerateColumns="False" DataKeyNames="arete" DataSourceID="SqlDataSourceTerneros" Height="78px" Width="459px" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical">
+            <asp:GridView ID="gvTerneros" runat="server" AutoGenerateColumns="False" DataKeyNames="arete" DataSourceID="SqlDataSourceTerneros" Height="78px" Width="459px" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="5px" CellPadding="4" ForeColor="Black" GridLines="Vertical">
                 <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" ButtonType="Button" />
@@ -74,7 +79,14 @@
 
                 <SortedDescendingHeaderStyle BackColor="#575357"></SortedDescendingHeaderStyle>
             </asp:GridView>
+            &nbsp;&nbsp;
             <asp:SqlDataSource runat="server" ID="SqlDataSourceTerneros" ConnectionString='<%$ ConnectionStrings:DefaultConnection %>' SelectCommand="SELECT arete, nombre, fecha, padre, madre FROM Terneros"></asp:SqlDataSource>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </div>
 </asp:Content>
