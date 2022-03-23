@@ -37,13 +37,13 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <asp:Button ID="btnInsertar" runat="server" Text="Insertar" BackColor="#CC9900" BorderColor="#663300" BorderWidth="5px" />
+            <asp:Button ID="btnInsertar" runat="server" Text="Insertar" BackColor="#FFCC99" BorderColor="#996633" BorderWidth="3px" />
         </div>
         <div class="col-md-4">
-            <asp:Button ID="btnModificar" runat="server" Text="Modificar" BackColor="#CC9900" BorderColor="#663300" BorderWidth="5px" />
+            <asp:Button ID="btnModificar" runat="server" Text="Modificar" BackColor="#FFCC99" BorderColor="#996633" BorderWidth="3px" />
         </div>
         <div class="col-md-4">
-            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" BackColor="#CC9900" BorderColor="#663300" BorderWidth="5px" />
+            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" BackColor="#FFCC99" BorderColor="#996633" BorderWidth="3px" />
             <br />
             <br />
             <br />
